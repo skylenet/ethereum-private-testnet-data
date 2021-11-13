@@ -86,7 +86,7 @@ out = {
 }
 
 if data["clique"]["enabled"]:
-  out["config"]["clique"] = {"period": 12,"epoch": 30000}
+  out["config"]["clique"] = {"period": 15,"epoch": 30000}
   signers = ''.join(str(i) for i in data["clique"]["signers"])
   out["extraData"] = ''.join(["0x", "0" * 64, signers, "0" *130])
 
