@@ -4,7 +4,8 @@
     "clique": {
       "params": {
         "period": 15,
-        "epoch": 30000
+        "epoch": 30000,
+        "blockReward": "0x0"
       }
     }
   },

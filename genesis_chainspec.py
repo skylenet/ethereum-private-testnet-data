@@ -117,7 +117,7 @@ out = {
 }
 
 if data["clique"]["enabled"]:
-  out["engine"]["clique"] = { "params": { "period": 15, "epoch": 30000 }}
+  out["engine"]["clique"] = { "params": { "period": 15, "epoch": 30000, "blockReward": "0x0" }}
   signers = ''.join(str(i) for i in data["clique"]["signers"])
   out["genesis"]["extraData"] = ''.join(["0x", "0" * 64, signers, "0" *130])
 
