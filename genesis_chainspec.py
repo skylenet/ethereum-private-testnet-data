@@ -19,7 +19,7 @@ out = {
         "gasLimitBoundDivisor": "0x400",
         "registrar": "0x0000000000000000000000000000000000000000",
         "accountStartNonce": "0x0",
-        "maximumExtraDataSize": "0x20",
+        "maximumExtraDataSize": "0xffff",
         "minGasLimit": "0x1388",
         "networkID": hex(int(data['chain_id'])),
         "eip150Transition": "0x0",
@@ -117,7 +117,7 @@ out = {
 }
 
 if data["clique"]["enabled"]:
-  out["engine"]["clique"] = { "params": { "period": 15, "epoch": 30000, "blockReward": "0x0" }}
+  out["engine"]["clique"] = { "params": { "period": 15, "epoch": 30000 }}
   signers = ''.join(str(i) for i in data["clique"]["signers"])
   out["genesis"]["extraData"] = ''.join(["0x", "0" * 64, signers, "0" *130])
 

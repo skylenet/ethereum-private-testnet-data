@@ -4,8 +4,7 @@
     "clique": {
       "params": {
         "period": 15,
-        "epoch": 30000,
-        "blockReward": "0x0"
+        "epoch": 30000
       }
     }
   },
@@ -13,7 +12,7 @@
     "gasLimitBoundDivisor": "0x400",
     "registrar": "0x0000000000000000000000000000000000000000",
     "accountStartNonce": "0x0",
-    "maximumExtraDataSize": "0x20",
+    "maximumExtraDataSize": "0xffff",
     "minGasLimit": "0x1388",
     "networkID": "0x1467f3",
     "eip150Transition": "0x0",
