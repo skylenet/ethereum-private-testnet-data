@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 mkdir -p genesis/execution/
-python3 geth_genesis.py > genesis/execution/geth.json
-python3 nethermind_genesis.py > genesis/execution/nethermind.json
+python3 genesis_geth.py > genesis/execution/geth.json
+python3 genesis_chainspec.py > genesis/execution/chainspec.json
